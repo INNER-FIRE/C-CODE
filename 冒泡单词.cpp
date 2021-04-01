@@ -1,3 +1,8 @@
+/**************************
+*√∞≈›≈≈–Ú 
+*µ•¥ ∞¥a-z≈≈–Ú
+*innerfire
+****************************/
 #include <stdio.h>
 #include <string.h>
 
@@ -23,7 +28,7 @@ int main()
 
     return 0;
 }
-void sort_length(char (*p)[11], int n)
+void sort_length(char (*p)[11], int n)//√∞≈›≈≈–Ú
 {
     int i, j;
     char temp[11];

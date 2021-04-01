@@ -1,8 +1,13 @@
-#include<stdio.h>
+/**************************
+*快速排序算法 
+*分成两份  交换 
+*分别排序
+****************************/
+#include<stdio.h>//头文件 标准输入输出
 
-void swap(int *x, int *y) 
+void swap(int *x, int *y) //定义交换函数 用指针传递
 {
-    int tmp = *x;
+    int tmp = *x;//定义临时变量
     *x = *y;
     *y = tmp;
 }
@@ -24,21 +29,22 @@ int patition(int *a, int left,int right)
     return i;
 }
 //快速排序
-void quickSort(int *a,int left,int right)
+void quickSort(int *a,int left,int right)//定义函数 三个参数 一个指针
  {
-    if (left>=right)
+    if (left>=right)//
         return;
-    int mid = patition(a,left,right);
-    quickSort(a, left, mid - 1);
-    quickSort(a, mid + 1, right);
+    int mid = patition(a,left,right);//中间值
+    quickSort(a, left, mid - 1);//排左边
+    quickSort(a, mid + 1, right);//排右边
 }
-int main() 
+int main() //主函数入口
 {
     int a[] = { 10,6,5,7,12,8,1,3,11,4,2,9,16,13,15,14 };
-    int n = sizeof(a) / sizeof(int);
-    quickSort(a, 0,n-1);
+    int n = 16;
+    quickSort(a, 0,n-1);//调用函数
     printf("排序好的数组为：");
-    for (int l = 0; l < n; l++) {
+    for (int l = 0; l < n; l++)//循环输出 
+	{
         printf("%d ", a[l]);
     }
     printf("\n");

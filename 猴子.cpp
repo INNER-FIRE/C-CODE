@@ -1,23 +1,19 @@
-#include <stdio.h>
-#include <cohio.h>
+/*****************************
+ºï×Ó³ÔÌÒÎÊÌâ
+ÄæÏòÇó½â
+innerfire
+  ****************************/
+#include<stdio.h>
 
-int Monkey(int n, int k)
-{ 
- int sum ;
- if(n==k)
- sum=1;
-else
- sum=2*Monkey(n+1,k)+1);
-return sum;
-}
-
-void main()
+void main() 
 {
- int k=10,sum=0;
- printf("è¯·è¾“å…¥çŒ´å­åƒæ¡ƒçš„å¤©æ•°ï¼Œé»˜è®¤ä¸º10å¤©\nk=")ï¼›
- fflush(stdin);
- scanf("%d",&k);
- sum=Monkey(1,k);
- printf("çŒ´å­ç¬¬ä¸€å¤©æ‘˜æ¡ƒä¸ªæ•°ä¸º=%d",sum);
- getche();
+	int n = 1, day = 1;
+	printf("ÇëÊäÈëÌìÊı\n");
+	scanf("%d", &day);
+	for (int i = 1; i < day; i++) 
+	{
+		//·´ÏòÇó½â£¬ÊıÁĞµÄÍ¨Ïî¹«Ê½Îªn=(n+1)*2
+		n = (n + 1) * 2;
+	}
+	printf("ÌÒ×Ó¸öÊıÎª:%d\n", n);
 }

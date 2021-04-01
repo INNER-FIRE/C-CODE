@@ -1,4 +1,9 @@
-
+/**************************
+*约瑟夫 用链表实现
+innerfire
+CSDN李四老师原创
+*
+****************************/
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>

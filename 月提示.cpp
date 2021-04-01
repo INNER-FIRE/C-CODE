@@ -1,8 +1,13 @@
+/**************************
+*月提示表
+练习处理字符串
+innerfire
+****************************/
 #include <stdio.h>
-#include <string.h> 
+#include <string.h> //字符串函数
 
-#include <time.h>
-#include <stdlib.h>
+#include <time.h>//时间
+#include <stdlib.h>//读取文件
 
 #define MAX_REMIND   50		//最大提醒数量(行数)
 #define MSG_LEN      60	    //每条提醒中字符最大长度(列数)
